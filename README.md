@@ -58,8 +58,6 @@ After the evaluation, the script will output various metrics (see below, example
 ## 6. Final Checks
 Before submission, double-check:
 
-- All languages listed in langs.txt have corresponding predictions in your submission.
-- The evaluation output is satisfactory based on the metrics.
 - If all checks pass, you're ready to submit your file for the final evaluation.
 
 
