@@ -1,7 +1,7 @@
 # SemEval2025-Task11 Evaluation 
 
 
-This repository contains the necessary files and instructions for participants in the Emotion SemEval Shared Task to check their submission and run evaluation on it.
+This repository contains the necessary files and instructions for participants in the SemEval2025-Task11 to check their submission and run evaluation on it.
 
 
 ### 1. Set Up the Required Environment
