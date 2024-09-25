@@ -13,13 +13,6 @@ pip install -r requirements.txt
 
 ```
 
-This will install the following packages:
-
-* scipy
-* numpy
-* tabulate2
-* scikit-learn
-
 ## 2. Prepare Your Submission File
 Ensure that your submission file is properly structured and contains the required predictions for each language as per the task. The languages are:
 
