@@ -3,7 +3,6 @@
 
 This repository contains the necessary files and instructions for participants in the Emotion SemEval Shared Task to check their submission and run evaluation on it.
 
-## Steps to Check Submission and Evaluate
 
 ### 1. Set Up the Required Environment
 
