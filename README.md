@@ -30,7 +30,7 @@ python check_submission.py --submission <path_to_your_submission_file>
 
 This script will validate the structure and content of the file, checking for:
 
-- Proper formatting
+- Proper formatting (check example for submission format: [Track A (English)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv) and [Track B (German)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv))
 - Inclusion of all necessary predictions
 - Compatibility with the task’s standards
 
