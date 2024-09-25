@@ -52,7 +52,7 @@ Alternatively, if you're running it as a script, ensure you have the necessary p
 
 After the evaluation, the script will output various metrics (see below, example for German), such as accuracy, precision, recall, and F1 scores for each language.
 
-<img width="746" alt="image" src="https://github.com/user-attachments/assets/915d31a0-89da-433a-b391-0fa04d5acc40">
+<img width="746" alt="image" src="assets/success-submission-sample-output.png">
 
 Note: This is an example for Track A.
 

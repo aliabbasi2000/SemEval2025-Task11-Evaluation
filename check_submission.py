@@ -44,8 +44,10 @@ else:
         print(f'{emotion} Pearson r: {score}')
       print(f'\nAverage Pearson r: {round(mean(emotion_r.values()), 4)}')
     else:
-      acc, mi_f1, ma_f1 = evaluate(gold_lines, pred_lines)
-      print(f'Evaluation scores for {language} track {task}:')
-      print('Multi-label accuracy (Jaccard score):', acc)
-      print('Micro F1 score:', mi_f1)
-      print('Macro F1 score:', ma_f1)
+      eval_scores = evaluate(gold_lines, pred_lines)
+      for average in eval_scores:
+        print(f'Evaluation scores ({average}) for {language} track {task}:')
+        print('Precision:', eval_scores[average]['precision'])
+        print('Recall:', eval_scores[average]['recall'])
+        print('F1 score:', eval_scores[average]['f1'])
+        print()

@@ -2,7 +2,7 @@ import os
 import sys
 import numpy as np
 import scipy.stats as ss
-from sklearn.metrics import f1_score, jaccard_score
+from sklearn.metrics import f1_score, recall_score, precision_score
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -104,11 +104,15 @@ def evaluate(gold_lines, pred_lines):
 
   y_true, y_pred = compute_scores(data_dic)
 
-  acc = jaccard_score(y_true, y_pred, average='samples')
-  f1_micro = f1_score(y_true, y_pred, average='micro')
-  f1_macro = f1_score(y_true, y_pred, average='macro')
+  eval_scores = {}
+  for average in ['micro', 'macro']:
+    recall = recall_score(y_true, y_pred, average=average)
+    precision = precision_score(y_true, y_pred, average=average)
+    f1 = f1_score(y_true, y_pred, average=average)
 
-  return acc, f1_micro, f1_macro
+    eval_scores[average] = {'recall': round(recall, 4), 'precision': round(precision, 4), 'f1': round(f1, 4)}
+
+  return eval_scores
 
 def evaluate_b(gold_lines, pred_lines):
   
