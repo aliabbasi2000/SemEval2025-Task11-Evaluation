@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 ## 2. Prepare Your Submission File
-Ensure that your submission file is properly structured and contains the required predictions for each language as per the task. The languages are:
+Ensure that your submission file is properly structured and contains the required predictions using the language code as per the task. The languages are:
 
 `afr, arq, amh, arb, ptbr, zho, eng, deu, hau, hin, ibo, ind, xho, zul, jav, kin, mar, ary, ptm, pcm, orm, ron, rus, tsn, som, spa, swa, swe, tat, tir, ukr, tso, yor`
 
