@@ -21,7 +21,7 @@ Ensure that your submission file is properly structured and contains the require
 ## 3. Verify the Submission Format
 
 
-To verify the correctness of your submission format, run the provided Python script `check_submission.py`. This will ensure that your file adheres to the task’s requirements.
+To verify the correctness of your submission format, run the provided Python script `check_submission.py`. This will ensure that your file adheres to the task’s requirements. Check this guide for more information about [participation and submission format](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) 
 
 ```bash
 python check_submission.py --submission <path_to_your_submission_file>
