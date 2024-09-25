@@ -46,7 +46,7 @@ You can execute the notebook locally or convert it into a Python script. If you'
 - Make sure the correct paths to your submission and test data are set in the notebook.
 - Run all cells to compute your evaluation metrics.
 
-Alternatively, if you're running it as a script, ensure you have the necessary parameters (e.g., paths to your files) and execute:
+Alternatively, if you're running it as a script, ensure you have the necessary parameters (e.g., paths to your files).
 
 ## 5. Review Evaluation Results
 
