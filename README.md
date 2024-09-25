@@ -50,8 +50,10 @@ Alternatively, if you're running it as a script, ensure you have the necessary p
 
 ## 5. Review Evaluation Results
 
-After the evaluation, the script will output various metrics, such as accuracy, precision, recall, and F1 scores for each language. Ensure your predictions align with the expected output and are scored appropriately.
+After the evaluation, the script will output various metrics (see below, example for German), such as accuracy, precision, recall, and F1 scores for each language. Ensure your predictions align with the expected output and are scored appropriately.
 
+
+<img width="566" alt="image" src="https://github.com/user-attachments/assets/fde4a9c9-86e8-443a-ac4c-6f016069817f">
 
 ## 6. Final Checks
 Before submission, double-check:
