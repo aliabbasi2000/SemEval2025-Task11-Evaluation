@@ -1,4 +1,4 @@
-# SemEval2025-Task11 Evaluation 
+# SemEval2025-Task11:  Submission Format Check and Evaluation Instructions
 
 
 This repository contains the necessary files and instructions for participants in the SemEval2025-Task11 to check their submission and run evaluation on it.
@@ -20,6 +20,8 @@ Ensure that your submission file is properly structured and contains the require
 
 ## 3. Verify the Submission Format
 
+To ensure your submission is valid and meets the requirements, use the `check_submission.py` script:
+
 
 To verify the correctness of your submission format, run the provided Python script `check_submission.py`. This will ensure that your file adheres to the task’s requirements. Check this guide for more information about [participation and submission format](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) 
 
@@ -28,23 +30,28 @@ python check_submission.py --submission <path_to_your_submission_file>
 
 ```
 
-This script will validate the structure and content of the file, checking for:
+This script checks for:
 
-- Proper formatting (check example for submission format: [Track A (English)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv) and [Track B (German)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv))
-- Inclusion of all necessary predictions
-- Compatibility with the task’s standards
+- Proper structure and format.
+- Inclusion of predictions for all necessary languages.
+- General compliance with the shared task’s requirements.
+
+Make sure that this script runs without errors before proceeding to evaluation.
+
+- Example for Proper formatting:  [Track A (English)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv) and [Track B (German)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv))
 
 
 ##  4. Run the Evaluation
 
+Once the submission passes the format validation, you can proceed to evaluate its performance. This can be done by running the evaluation script provided in the Jupyter notebook `check_submission.ipynb`.
 
-Once your submission is validated, you can proceed with evaluating your predictions. The evaluation script in `check_submission.ipynb` (Jupyter notebook) is designed to provide you with feedback on your submission.
 
-You can execute the notebook locally or convert it into a Python script. If you're using the notebook:
+### Running the Notebook
 
-- Open the notebook (check_submission.ipynb) in Jupyter.
-- Make sure the correct paths to your submission and test data are set in the notebook.
-- Run all cells to compute your evaluation metrics.
+- Open the `check_submission.ipynb` file in a Jupyter environment.
+- Make sure to set the correct file paths for your submission and test data.
+- Run the cells to compute the evaluation metrics (e.g., accuracy, precision, recall, F1 scores).
+
 
 Alternatively, if you're running it as a script, ensure you have the necessary parameters (e.g., paths to your files).
 
@@ -56,10 +63,17 @@ After the evaluation, the script will output various metrics (see below, example
 
 Note: This is an example for Track A.
 
-## 6. Final Checks
-Before submission, double-check:
+## 6. Zip the Submission File
 
-- If all checks pass, you're ready to submit your file for the final evaluation.
+- After validation and evaluation, the script automatically zips the submission file in preparation for upload. The following message will confirm that your file is zipped:
+
+`Zipped file: pred_<language_code>_<task>.zip is ready for upload in the Codalab submission page.`
+
+## 7 Submit the Zipped File
+
+- Upload the zipped file to the Codabench as your final submission.
+
+
 
 
 
