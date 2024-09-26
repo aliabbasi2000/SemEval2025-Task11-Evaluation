@@ -1,8 +1,9 @@
 import os
 import sys
+import zipfile
 import numpy as np
 import scipy.stats as ss
-from sklearn.metrics import f1_score, jaccard_score
+from sklearn.metrics import f1_score, recall_score, precision_score
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -15,8 +16,8 @@ def get_task_details(submission_file):
   except IndexError:
     exit('Submission file name is not in the correct format, it should have the format "pred_langcode_taskname.csv".')
 
-def check_if_data_is_released(language):
-  if language in open('../langs.txt').read().splitlines():
+def check_if_language_is_supported(language):
+  if language in open('langs.txt').read().splitlines():
     return True
 
 def check_file_name(file_path):
@@ -104,11 +105,15 @@ def evaluate(gold_lines, pred_lines):
 
   y_true, y_pred = compute_scores(data_dic)
 
-  acc = jaccard_score(y_true, y_pred, average='samples')
-  f1_micro = f1_score(y_true, y_pred, average='micro')
-  f1_macro = f1_score(y_true, y_pred, average='macro')
+  eval_scores = {}
+  for average in ['micro', 'macro']:
+    recall = recall_score(y_true, y_pred, average=average)
+    precision = precision_score(y_true, y_pred, average=average)
+    f1 = f1_score(y_true, y_pred, average=average)
 
-  return acc, f1_micro, f1_macro
+    eval_scores[average] = {'recall': round(recall, 4), 'precision': round(precision, 4), 'f1': round(f1, 4)}
+
+  return eval_scores
 
 def evaluate_b(gold_lines, pred_lines):
   
@@ -127,3 +132,12 @@ def evaluate_b(gold_lines, pred_lines):
   }
 
   return emotion_r
+
+def zip_file(submission_file):
+  file_name = submission_file.split(".")[0]
+  zip_file_name = f'{file_name}.zip'
+
+  with zipfile.ZipFile(zip_file_name, 'w') as zipf:
+    zipf.write(submission_file, os.path.basename(submission_file))
+
+  print(f'Zipped file: {zip_file_name} is ready for upload in the codabench submission page.')
