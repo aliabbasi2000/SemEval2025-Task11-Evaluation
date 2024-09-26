@@ -10,13 +10,15 @@ warnings.filterwarnings('ignore')
 
 def get_task_details(submission_file):
   try:
-    language = submission_file.split('_')[1]
-    task = submission_file.split('_')[2].split('.')[0]
+    _, file_name = os.path.split(submission_file)
+    language = file_name.split('_')[1]
+    task = file_name.split('_')[2].split('.')[0]
     return language, task
   except IndexError:
     exit('Submission file name is not in the correct format, it should have the format "pred_langcode_taskname.csv".')
 
 def check_if_language_is_supported(language):
+  print("language is ===")
   if language in open('langs.txt').read().splitlines():
     return True
 
