@@ -1,4 +1,4 @@
-# SemEval2025-Task11 Evaluation 
+# SemEval2025-Task11 Submission Format Check and Evaluation Instructions
 
 
 This repository contains the necessary files and instructions for participants in the SemEval2025-Task11 to check their submission and run evaluation on it.
