@@ -18,7 +18,6 @@ def get_task_details(submission_file):
     exit('Submission file name is not in the correct format, it should have the format "pred_langcode_taskname.csv".')
 
 def check_if_language_is_supported(language):
-  print("language is ===")
   if language in open('langs.txt').read().splitlines():
     return True
 
