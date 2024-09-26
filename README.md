@@ -65,7 +65,12 @@ Note: This is an example for Track A.
 
 ## 6. Zip the Submission File
 
-- After validation and evaluation, the script automatically zips the submission file in preparation for upload. The following message will confirm that your file is zipped:
+- If you want to zip the file automatically after validation and evaluation, add this flag (see below): ` --zip_for_submission \`
+
+<img width="619" alt="image" src="https://github.com/user-attachments/assets/42dfc80e-9365-477a-a389-27ed8a02ab75">
+
+
+- The script automatically zips the submission file in preparation for upload. The following message will confirm that your file is zipped:
 
 `Zipped file: pred_<language_code>_<task>.zip is ready for upload in the Codalab submission page.`
 
