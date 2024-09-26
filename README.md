@@ -63,9 +63,17 @@ After the evaluation, the script will output various metrics (see below, example
 
 Note: This is an example for Track A.
 
-## 6. Submit to Codabench
+## 6. Zip the Submission File
 
-- Zip your file by following the instructions outline [here](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) to submit your prediction:
+- After validation and evaluation, the script automatically zips the submission file in preparation for upload. The following message will confirm that your file is zipped:
+
+`Zipped file: pred_<language_code>_<task>.zip is ready for upload in the Codalab submission page.`
+
+## 7 Submit the Zipped File
+
+- Upload the zipped file to the Codabench as your final submission.
+
+
 
 
 
