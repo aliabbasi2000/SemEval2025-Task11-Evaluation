@@ -20,6 +20,8 @@ Ensure that your submission file is properly structured and contains the require
 
 ## 3. Verify the Submission Format
 
+To ensure your submission is valid and meets the requirements, use the `check_submission.py` script:
+
 
 To verify the correctness of your submission format, run the provided Python script `check_submission.py`. This will ensure that your file adheres to the task’s requirements. Check this guide for more information about [participation and submission format](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) 
 
@@ -28,11 +30,15 @@ python check_submission.py --submission <path_to_your_submission_file>
 
 ```
 
-This script will validate the structure and content of the file, checking for:
+This script checks for:
 
-- Proper formatting (check example for submission format: [Track A (English)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv) and [Track B (German)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv))
-- Inclusion of all necessary predictions
-- Compatibility with the task’s standards
+- Proper structure and format.
+- Inclusion of predictions for all necessary languages.
+- General compliance with the shared task’s requirements.
+
+Make sure that this script runs without errors before proceeding to evaluation.
+
+- Example for Proper formatting:  [Track A (English)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv) and [Track B (German)](https://github.com/emotion-analysis-project/SemEval2025-Task11-Evaluation/blob/main/sample_submission_format/pred_eng_a%20copy.csv))
 
 
 ##  4. Run the Evaluation
