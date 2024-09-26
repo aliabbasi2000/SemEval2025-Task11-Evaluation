@@ -43,14 +43,15 @@ Make sure that this script runs without errors before proceeding to evaluation.
 
 ##  4. Run the Evaluation
 
+Once the submission passes the format validation, you can proceed to evaluate its performance. This can be done by running the evaluation script provided in the Jupyter notebook `check_submission.ipynb`.
 
-Once your submission is validated, you can proceed with evaluating your predictions. The evaluation script in `check_submission.ipynb` (Jupyter notebook) is designed to provide you with feedback on your submission.
 
-You can execute the notebook locally or convert it into a Python script. If you're using the notebook:
+### Running the Notebook
 
-- Open the notebook (check_submission.ipynb) in Jupyter.
-- Make sure the correct paths to your submission and test data are set in the notebook.
-- Run all cells to compute your evaluation metrics.
+- Open the `check_submission.ipynb` file in a Jupyter environment.
+- Make sure to set the correct file paths for your submission and test data.
+- Run the cells to compute the evaluation metrics (e.g., accuracy, precision, recall, F1 scores).
+
 
 Alternatively, if you're running it as a script, ensure you have the necessary parameters (e.g., paths to your files).
 
@@ -62,10 +63,9 @@ After the evaluation, the script will output various metrics (see below, example
 
 Note: This is an example for Track A.
 
-## 6. Final Checks
-Before submission, double-check:
+## 6. Submit to Codabench
 
-- If all checks pass, you're ready to submit your file for the final evaluation.
+- Zip your file by following the instructions outline [here]([participation and submission format](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) to submit your prediction:
 
 
 
