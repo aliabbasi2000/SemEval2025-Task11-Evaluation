@@ -65,7 +65,7 @@ Note: This is an example for Track A.
 
 ## 6. Submit to Codabench
 
-- Zip your file by following the instructions outline [here]([participation and submission format](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) to submit your prediction:
+- Zip your file by following the instructions outline [here](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit) to submit your prediction:
 
 
 
