@@ -23,7 +23,7 @@ Ensure that your submission file is properly structured and contains the require
 To ensure your submission is valid and meets the requirements, use the `check_submission.py` script. This will ensure that your file follows the task’s requirements. Check this guide for more information about [participation and submission](https://docs.google.com/document/d/1yETTEiD8JVL8oeXu8Dvwc7OgPIDp0ROxd9nXifsXYYE/edit). 
 
 ```bash
-python check_submission.py -p dev -s <path_to_your_submission_file>
+python check_submission.py -s <path_to_your_submission_file>
 ```
 
 This script checks whether:
