@@ -64,7 +64,7 @@ def check_submission_folder(folder_path):
     checklist.append(['Prediction files.', 'Pass', 'All prediction files are in the correct format.'])
 
   check_status = True
-  if 'Fail' not in check_status:
+  if 'Fail' not in [c[1] for c in checklist]:
     checklist.append(['Submission format check.', 'Pass', 'All checks passed.'])
   else:
     checklist.append(['Submission format check.', 'Fail', 'Some checks failed.'])

@@ -8,7 +8,6 @@ from utils import check_files, check_submission_folder, evaluate, zip_file
 
 parser = argparse.ArgumentParser(description='Checking file submission format.')
 parser.add_argument('-s', '--submission_folder', type=str, required=True, help='Submission folder path.')
-parser.add_argument('-p', '--phase', type=str, required=True, help='Phase of the competition (dev or test).')
 parser.add_argument('--evaluate', action='store_true', help='Evaluate the submission file.')
 parser.add_argument('-g', '--gold_data', type=str, help='Path to the gold data file.', default='')
 parser.add_argument('--zip_for_submission', action='store_true', help='Zip the submission file.')
@@ -16,7 +15,6 @@ args = parser.parse_args()
 
 submission_folder = args.submission_folder
 gold_data_path = args.gold_data
-phase = args.phase
 check_status = False
 pred_langs = []
 
