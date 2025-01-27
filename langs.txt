@@ -16,14 +16,13 @@ jav
 kin
 mar
 ary
-ptm
 pcm
 orm
 ron
 rus
 tsn
 som
-spa
+eps
 swa
 swe
 tat
@@ -31,3 +30,5 @@ tir
 ukr
 tso
 yor
+vmw
+ptmz
